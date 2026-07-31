@@ -6,12 +6,13 @@ export default function Hero() {
       <div className="wrap">
         <div className="eyebrow">Software engineering studio</div>
         <h1>
-          We build the systems <span className="accent">underneath</span> your business.
+          We build the systems <span className="accent">underneath</span> your
+          business.
         </h1>
         <p className="hero-sub">
-          Fintech platforms, web & mobile products, commerce infrastructure, on-chain contracts, and
-          trading signal systems — engineered by one team that ships across all five, from
-          architecture to production.
+          Fintech platforms, web & mobile products, commerce infrastructure,
+          on-chain contracts, and trading signal systems — engineered by one
+          team that ships across all five, from architecture to production.
         </p>
         <div className="hero-actions">
           <a href="#contact" className="btn-primary">

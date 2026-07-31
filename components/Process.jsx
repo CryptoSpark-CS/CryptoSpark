@@ -3,17 +3,19 @@ const STEPS = [
     label: "Stage 01",
     title: "Scope",
     description:
-      "We map the system, the constraints, and what \"done\" actually means before writing a line of code.",
+      'We map the system, the constraints, and what "done" actually means before writing a line of code.',
   },
   {
     label: "Stage 02",
     title: "Architect",
-    description: "Data models, integrations, and infra decisions get made on paper, where changing them is cheap.",
+    description:
+      "Data models, integrations, and infra decisions get made on paper, where changing them is cheap.",
   },
   {
     label: "Stage 03",
     title: "Build",
-    description: "Weekly demos, not monthly reveals. You see working software from week one.",
+    description:
+      "Weekly demos, not monthly reveals. You see working software from week one.",
   },
   {
     label: "Stage 04",
@@ -34,8 +36,12 @@ export default function Process() {
     <section className="section" id="process">
       <div className="wrap">
         <div className="section-tag">// Process</div>
-        <h2 className="section-title">Same five stages, whatever we&apos;re building.</h2>
-        <p className="section-desc">The domain changes. The way we de-risk a build doesn&apos;t.</p>
+        <h2 className="section-title">
+          Same five stages, whatever we&apos;re building.
+        </h2>
+        <p className="section-desc">
+          The domain changes. The way we de-risk a build doesn&apos;t.
+        </p>
 
         <div className="pipeline">
           <div className="pipeline-track">

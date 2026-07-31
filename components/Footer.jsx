@@ -7,14 +7,25 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <div className="logo">
-              <svg className="spark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="spark"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" />
               </svg>
               CRYPTOSPARK
             </div>
-            <p style={{ color: "var(--ink-soft)", fontSize: 14, marginTop: 14, maxWidth: 260 }}>
-              Software engineering across fintech, web/mobile, commerce, blockchain, and trading
-              signals.
+            <p
+              style={{
+                color: "var(--ink-soft)",
+                fontSize: 14,
+                marginTop: 14,
+                maxWidth: 260,
+              }}
+            >
+              Software engineering across fintech, web/mobile, commerce,
+              blockchain, and trading signals.
             </p>
           </div>
           <div className="footer-cols">

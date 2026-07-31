@@ -1,6 +1,6 @@
 const STATS = [
-  { num: "120+", label: "PROJECTS SHIPPED" },
-  { num: "5", label: "DOMAINS OF DEPTH" },
+  { num: "10+", label: "PROJECTS SHIPPED" },
+  { num: "6", label: "DOMAINS OF DEPTH" },
   { num: "99.95%", label: "AVG. UPTIME DELIVERED" },
   { num: "18d", label: "AVG. TIME TO FIRST DEMO" },
 ];

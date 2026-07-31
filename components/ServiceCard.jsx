@@ -2,23 +2,25 @@
 
 import { useRef } from "react";
 
-export interface ServiceCardProps {
-  id: string;
-  index: string;
-  title: string;
-  description: string;
-  tags: string[];
-  wide?: boolean;
-}
+export default function ServiceCard({
+  id,
+  index,
+  title,
+  description,
+  tags,
+  wide,
+}) {
+  const ref = useRef(null);
 
-export default function ServiceCard({ id, index, title, description, tags, wide }: ServiceCardProps) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
+  function handleMouseMove(e) {
     const el = ref.current;
     if (!el) return;
-    const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const canHover = window.matchMedia(
+      "(hover: hover) and (pointer: fine)",
+    ).matches;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (!canHover || reduced) return;
 
     const rect = el.getBoundingClientRect();
@@ -28,14 +30,15 @@ export default function ServiceCard({ id, index, title, description, tags, wide 
     const rotY = (px - 0.5) * (maxTilt * 2);
     const rotX = (0.5 - py) * (maxTilt * 2);
     el.style.transform = `perspective(1000px) rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(
-      2
+      2,
     )}deg) translateZ(6px) scale(1.015)`;
   }
 
   function handleMouseLeave() {
     const el = ref.current;
     if (!el) return;
-    el.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px) scale(1)";
+    el.style.transform =
+      "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px) scale(1)";
   }
 
   return (
