@@ -36,6 +36,7 @@ export default function Footer() {
               <a href="#services">E-commerce</a>
               <a href="#services">Smart Contracts</a>
               <a href="#services">Trading Signals</a>
+              <a href="#services">Marketing</a>
             </div>
             <div className="footer-col">
               <h5>Company</h5>
