@@ -52,7 +52,7 @@ export default function ContactPage() {
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
       setStatus("error");
       setErrorMsg(
-        "EmailJS isn't configured yet — check the env vars in the file header, then restart the dev server.",
+        "EmailJS isn't configured yet. Check the env vars in the file header, then restart the dev server.",
       );
       return;
     }
@@ -81,7 +81,7 @@ export default function ContactPage() {
         <div className="section-tag">// Contact</div>
         <h2 className="section-title">Tell us what you&apos;re building.</h2>
         <p className="section-desc">
-          Fill this in and it lands straight in our inbox — no scheduling tool,
+          Fill this in and it lands straight in our inbox, no scheduling tool,
           no gatekeeping.
         </p>
 
@@ -153,7 +153,7 @@ export default function ContactPage() {
           <div className="form-status" role="status" aria-live="polite">
             {status === "success" && (
               <p className="form-success">
-                Message sent — we&apos;ll reply within one business day.
+                Message sent: we&apos;ll reply within one business day.
               </p>
             )}
             {status === "error" && <p className="form-error">{errorMsg}</p>}
