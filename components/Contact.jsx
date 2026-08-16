@@ -79,7 +79,7 @@ export default function ContactPage() {
     <section className="section contact-section">
       <div className="wrap contact-wrap">
         <div className="section-tag">// Contact</div>
-        <h2 className="section-title">Tell us what you&apos;re building.</h2>
+        <h2 className="section-title">Start the conversation.</h2>
         <p className="section-desc">
           Fill this in and it lands straight in our inbox, no scheduling tool,
           no gatekeeping.

@@ -8,6 +8,8 @@ import Process from "@/components/Process";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ContactPage from "@/components/Contact";
+import Why from "@/components/Why";
+import FAQ from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -16,8 +18,10 @@ export default function Home() {
       <Header />
       <Hero />
       <Stats />
+      <Why />
       <Services />
       <Process />
+      <FAQ />
       <CTA />
       <ContactPage />
       <Footer />

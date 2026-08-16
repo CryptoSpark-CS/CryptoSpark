@@ -1,5 +1,4 @@
-import { Metadata } from "next";
-import { Space_Grotesk, Inter, IBM_Plex_Mono } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const display = Space_Grotesk({
@@ -24,10 +23,9 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title:
-    "CryptoSpark — Software Engineering for Fintech, Web, Commerce & Chain",
+  title: "CryptoSpark | Fintech, Web & Blockchain Engineering",
   description:
-    "CryptoSpark builds fintech platforms, web & mobile products, e-commerce infrastructure, smart contracts, and trading signal systems — engineered by one team, end to end.",
+    "CryptoSpark engineers fintech platforms, web & mobile apps, e-commerce, smart contracts, and trading systems. One team, start to finish.",
 };
 
 export default function RootLayout({ children }) {
