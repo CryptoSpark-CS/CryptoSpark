@@ -610,3 +610,78 @@ footer {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+.contact-wrap {
+  max-width: 640px;
+}
+
+.contact-form {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row label {
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--body);
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 13px 14px;
+  resize: vertical;
+  transition: border-color 0.15s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.contact-form input:disabled,
+.contact-form textarea:disabled {
+  opacity: 0.6;
+}
+
+.contact-form .btn-primary {
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  font-family: inherit;
+}
+
+.contact-form .btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-status {
+  min-height: 20px;
+}
+
+.form-success {
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.form-error {
+  font-size: 13.5px;
+  color: #b3261e;
+}

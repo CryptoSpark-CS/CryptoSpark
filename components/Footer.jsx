@@ -40,20 +40,17 @@ export default function Footer() {
             </div>
             <div className="footer-col">
               <h5>Company</h5>
-              <a href="#work">Work</a>
               <a href="#process">Process</a>
               <a href="#">Careers</a>
             </div>
             <div className="footer-col">
               <h5>Get in touch</h5>
-              <a href="mailto:hello@cryptospark.io">hello@cryptospark.io</a>
-              <a href="#">+216 00 000 000</a>
+              <a href="mailto:5h140w23@gmail.com">5h140w23@gmail.com</a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
           <span>© {year} CryptoSpark. All rights reserved.</span>
-          <span>Built to spec, not template.</span>
         </div>
       </div>
     </footer>
